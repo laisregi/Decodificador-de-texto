@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.conteudo-principal {
+    width: 70%;
+    padding: 20px;
+    background-color: #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#aviso{
+    color: red;
+    font-size: 12px;
+    margin-top: 400px;
+    text-align: center;
+    
+}
+.menu-direito {
+    width: 30%;
+    padding: 20px;
+    background-color: #272626;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.menu-direito img {
+    max-width: 100%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-direito h2 {
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.menu-direito p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.conteudo-principal textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    resize: none;
+    outline: none;
+    font-family: Arial, sans-serif;
+    margin: 10%;
+}
+
+.conteudo-principal textarea::placeholder {
+    color: #aaa;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+    transform: scale(0.98);
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.botoes {
+    display: flex;
+    justify-content:center;
+    gap: 25px;
+    margin:50px;
+}
+
+.botoes button, #copiar {
+    padding: 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #f84e0a;
+    color: white;
+    transition: background-color 0.3s;
+}
+.botoes button {
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #f84e0a;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.botoes button:hover, #copiar:hover {
+    background-color: #b32400;
+}
+
+#resultado-criptografado {
+    margin-top: 20px;
+    text-align: left;
+    display: block;
+}
+
+#texto-criptografado {
+    word-wrap: break-word;
+    color: #fff;
+}
+
+#copiar {
+    margin-top: 10px; 
+}
