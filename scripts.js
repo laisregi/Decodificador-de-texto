@@ -48,6 +48,8 @@ document.getElementById("criptografar").addEventListener("click", function() {
         document.getElementById("menu-titulo").innerText = "Texto Criptografado";
         document.getElementById("texto-criptografado").innerText = criptografado;
         document.getElementById("resultado-criptografado").style.display = "block";
+        document.querySelector(".menu-direito img").style.display = "none";
+        document.querySelector(".menu-direito p").style.display = "none";
         document.getElementById("aviso").style.display = "none";
     }
 });
@@ -63,6 +65,8 @@ document.getElementById("descriptografar").addEventListener("click", function() 
             document.getElementById("menu-titulo").innerText = "Texto Descriptografado";
             document.getElementById("texto-criptografado").innerText = textoNormalizado;
             document.getElementById("resultado-criptografado").style.display = "block";
+            document.querySelector(".menu-direito img").style.display = "none";
+            document.querySelector(".menu-direito p").style.display = "none";
             document.getElementById("aviso").style.display = "none";
         } else {
             document.getElementById("aviso").style.display = "block";
